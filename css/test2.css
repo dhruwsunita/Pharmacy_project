@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  margin: 5% 20%;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  height: 450px;
+  width: 80%;
+  max-width: 800px;
+  min-width: 400px;
+}
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.image-container {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.image-container img {
+  position: sticky;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.form-container h3 {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.form-container .form-group1 input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  background-color: #f1f1f1;
+}
+
+.form-container .form-group1 label {
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  font-size: 18px;
+  color: rgb(129, 126, 126);
+}
+
+.message {
+  color: red;
+  font-style: italic;
+  font-size: x-small;
+}
+
+.form-group2 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group2 label {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.form-group2 input,
+.form-group2 select {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  background-color: #f1f1f1;
+  color: black;
+  margin-bottom: 10px;
+}
+
+
+.form-group2 input[type="checkbox"] {
+  width: 100%;
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+
+.form-group2 input[type="radio"] {
+  width: 100%;
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+
+.button-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 20px;
+  color: white;
+  background-color: purple;
+  margin-bottom: 20px;
+}
+
+
+/* @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }  
+    .image-container {
+      display: none;
+    }
+
+    .form-container {
+      width: 100%;
+    } 
+  }  */

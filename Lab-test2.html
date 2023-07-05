@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab test form</title>
+  <link rel="stylesheet" href="css/test2.css">
+</head>
+
+<body>
+  <section class="container">
+    <div class="form-container">
+      <form action="#">
+        <div class="form-group1">
+          <h3>1. Your Contact Details</h3>
+          <table>
+            <tr>
+              <td><label for="name">Full Name</label></td>
+              <td><label for="patient_id">Patient id if exists</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="name" required></td>
+              <td><input type="text" name="patient_id" required></td>
+
+            </tr>
+            <tr>
+              <td><label for="number">Contact Number</label></td>
+              <td><label for="email">Email id</label></td>
+
+            </tr>
+            <tr>
+              <td><input type="number" min="6000000000" max="9999999999" name="number" required></td>
+              <td><input type="email" name="email" required></td>
+            </tr>
+          </table>
+        </div>
+        <br>
+        <div class="form-group1">
+          <h3>2. Address</h3>
+          <table>
+            <tr>
+              <td><label for="house-number">H-No</label></td>
+              <td><label for="street">Street</label></td>
+            </tr>
+            <tr>
+              <td><input type="number" name="house-number" required></td>
+              <td><input type="text" name="street" required></td>
+            </tr>
+            <tr>
+              <td><label for="area">Area</label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="area" required></td>
+            </tr>
+          </table>
+        </div>
+        <div class="form-group2">
+          <label for="district"><b>District</b></label><br>
+          <select id="district" name="district" required>
+            <option value="">Choose</option>
+            <option value="district1">District 1</option>
+            <option value="district2">District 2</option>
+            <option value="district3">District 3</option>
+          </select>
+        </div>
+        <div class="form-group2">
+          <label>Choose the Test Type:</label><br>
+          <div>
+            <input type="checkbox" id="cbc" name="test-type" value="CBC">
+            <label for="cbc">CBC</label>
+          </div>
+          <div>
+            <input type="checkbox" id="complete-urine" name="test-type" value="Complete Urine">
+            <label for="complete-urine">Complete Urine</label>
+          </div>
+          <div>
+            <input type="checkbox" id="lipid-profile" name="test-type" value="Lipid Profile">
+            <label for="lipid-profile">Lipid Profile</label>
+          </div>
+          <div>
+            <input type="checkbox" id="tsh" name="test-type" value="Thyroid Stimulating Hormone(TSH)">
+            <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+          </div>
+          <div>
+            <input type="checkbox" id="glucose-test" name="test-type" value="Glucose Test">
+            <label for="glucose-test">Glucose Test</label>
+          </div>
+          <p class="message">Check at least one box without fail</p>
+        </div>
+        <div class="form-group2">
+          <label>Do you want a hard copy of the report also?</label><br>
+          <div>
+            <input type="radio" id="hard-copy-yes" name="hard-copy" value="Yes">
+            <label for="hard-copy-yes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" id="hard-copy-no" name="hard-copy" value="No">
+            <label for="hard-copy-no">No</label>
+          </div>
+        </div>
+        <div class="form-group2">
+          <label for="date">Select Your Comfortable Date:</label><br>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group2">
+          <label for="time">Select Your Comfortable Time:</label><br>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="button-container">
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="image-container">
+      <img src="images/lab-test.jpg" alt="">
+    </div>
+  </section>
+</body>
+
+</html>
